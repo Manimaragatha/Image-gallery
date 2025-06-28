@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 class="title">Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="active" onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery">
+    <!-- Nature -->
+    <div class="image nature" data-title="Butterfly">
+      <img src="images/nature1.jpg" alt="Nature 1" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Hills">
+      <img src="images/nature2.jpg" alt="Nature 2" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Mountain Lake">
+      <img src="images/nature3.jpg" alt="Nature 3" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Tree">
+      <img src="images/nature4.jpg" alt="Nature 4" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Sprout">
+      <img src="images/nature5.jpg" alt="Nature 5" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Rose">
+      <img src="images/nature6.jpg" alt="Nature 6" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Lake">
+      <img src="images/nature7.jpg" alt="Nature 7" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Wheat">
+      <img src="images/nature8.jpg" alt="Nature 8" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Green forest">
+      <img src="images/nature9.jpg" alt="Nature 9" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Hills">
+      <img src="images/nature10.jpg" alt="Nature 10" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Sunset">
+      <img src="images/nature11.jpg" alt="Nature 11" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Sandhan Valley">
+      <img src="images/nature12.jpg" alt="Nature 12" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Kalhatty Falls">
+      <img src="images/nature13.jpg" alt="Nature 13" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Daisy flower">
+      <img src="images/nature14.jpg" alt="Nature 14" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Forest Path">
+      <img src="images/nature15.jpg" alt="Nature 15" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image nature" data-title="Lantern light">
+      <img src="images/nature16.jpg" alt="Nature 16" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+
+    <!-- City -->
+    <div class="image city" data-title="Night Lights">
+      <img src="images/city1.jpg" alt="City 1" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="London">
+      <img src="images/city2.jpg" alt="City 2" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Downtown">
+      <img src="images/city3.jpg" alt="City 3" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Urban Life">
+      <img src="images/city4.jpg" alt="City 4" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Italy">
+      <img src="images/city5.jpg" alt="City 5" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Louvre Pyramid">
+      <img src="images/city6.jpg" alt="City 6" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Statue of liberty">
+      <img src="images/city7.jpg" alt="City 7" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="twin tower">
+      <img src="images/city8.jpg" alt="City 8" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="brooklyn tower">
+      <img src="images/city9.jpg" alt="City 9" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="British columbia">
+      <img src="images/city10.jpg" alt="City 10" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Michigan">
+      <img src="images/city11.jpg" alt="City 11" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Chicago">
+      <img src="images/city12.jpg" alt="City 12" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Singapore">
+      <img src="images/city13.jpg" alt="City 13" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Alleyway at night ">
+      <img src="images/city14.jpg" alt="City 14" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Big Ben tower">
+      <img src="images/city15.jpg" alt="City 15" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="twin tower">
+      <img src="images/city16.jpg" alt="City 16" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image city" data-title="Victoria Peak">
+      <img src="images/city17.jpg" alt="City 17" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+
+    <!-- Animals -->
+    <div class="image animals" data-title="Deer Closeup">
+      <img src="images/animal1.jpg" alt="Animal 1" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Monkey">
+      <img src="images/animal2.jpg" alt="Animal 2" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Rhinoceros">
+      <img src="images/animal3.jpg" alt="Animal 3" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Elephant">
+      <img src="images/animal4.jpg" alt="Animal 4" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+     <div class="image animals" data-title="Tiger">
+      <img src="images/animal5.jpg" alt="Animal 5" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Donkey">
+      <img src="images/animal6.jpg" alt="Animal 6" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Buffalo">
+      <img src="images/animal7.jpg" alt="Animal 7" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Elephant">
+      <img src="images/animal8.jpg" alt="Animal 8" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="cow">
+      <img src="images/animal9.jpg" alt="Animal 9" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Bear">
+      <img src="images/animal10.jpg" alt="Animal 10" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Camel">
+      <img src="images/animal11.jpg" alt="Animal 11" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Buffalo">
+      <img src="images/animal12.jpg" alt="Animal 12" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Zebra">
+      <img src="images/animal13.jpg" alt="Animal 13" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Snail">
+      <img src="images/animal14.jpg" alt="Animal 14" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Tortoise">
+      <img src="images/animal15.jpg" alt="Animal 15" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    <div class="image animals" data-title="Donkey">
+      <img src="images/animal16.jpg" alt="Animal 16" loading="lazy" onclick="openLightbox(this)" />
+    </div>
+    
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Preview">
+    <a class="prev" onclick="changeImage(-1)">❮</a>
+    <a class="next" onclick="changeImage(1)">❯</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
